@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/calculadora.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Monomaniac+One&family=Poppins:wght@300;400&family=Ubuntu&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Monomaniac+One&family=Montaga&family=Poppins:wght@300;400&family=Ubuntu&display=swap"
+        rel="stylesheet">
+
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <title>CalcTech</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo">
+            <a href="#"><img src="img/Logo.png" width="45"></a>
+        </div>
+        <nav class="header_nav">
+            <ul class="header_nav_ul">
+                <li class="header_nav_ul_li"><a href="index.html" class="header_nav_ul_li_a">HOME</a></li>
+                <li class="header_nav_ul_li"><a href="index.html#aboutUs" class="header_nav_ul_li_a">Sobre Nós</a></li>
+                <li class="header_nav_ul_li"><a href="index.html#faleConosco" class="header_nav_ul_li_a">Fale
+                        Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1> EQUAÇÃO DE SEGUNDO GRAU </h1>
+        <p>Fórmula : a(x^2)+b(x)+c = 0</p>
+        <p> Δ = (b^2)-4*a*c</p>
+        <p>bhaskara = -b±√Δ/(2*a)</p>
+
+        <form>
+
+            <div>
+                <label>VALOR A: </label>
+                <input type="text" id="idtextA">
+            </div>
+
+
+            <div>
+                <label>VALOR B: </label>
+                <input type="text" id="idtextB">
+
+            </div>
+
+
+            <div>
+
+                <label>VALOR C: </label>
+                <input type="text" id="idtextC"> <br><br>
+
+            </div>
+
+            <div>
+
+                <button id="calcularBtn" onclick="calcular(event)">Calcular</button>
+                <button id="limparBtn" type="reset">Limpar</button>
+
+            </div>
+
+            <div id="resultados">
+                <h2>Resultados:</h2>
+                <p id="deltaRes"></p>
+                <p id="bhaskaraRes"></p>
+            </div>
+        </form>
+
+    </main>
+
+</body>
+
+</html>
