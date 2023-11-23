@@ -121,26 +121,38 @@ html {
 
 /* SOBRE NÓS */
 #aboutUs {
-    height: 50vh;
-    background-image: url(../img/Background.png);
+    margin: 10%;
 }
 
 .aboutUsText {
     font-size: 21px;
     margin: 10px 10% 10px 10%;
+    max-width: 50%;
+}
+
+.ancora_etechas {
+    color: #645178;
+    text-decoration: none;
+}
+
+.ancora_etechas:hover {
+    text-decoration: underline;
+}
+
+.descricao {
+    font-size: 16px;
 }
 
 
 /* CALCULADORA */
 #calculadora {
-    height: 50vh;
+    background-image: url(../img/Background.png);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .calcText {
-    margin: 10%;
     max-width: 58%;
     color: rgba(0, 0, 0, 0.86);
     font-family: 'Montaga';
@@ -151,8 +163,26 @@ html {
 }
 
 
+/* RODAPÉ (FOOTER) */
+/* FALE CONOSCO */
+#faleConosco {}
+
+.footerTop {
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.footer_p {
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
 /* Dispositivos com largura menor */
-@media (max-width: 800px) {
+@media (max-width: 820px) {
 
     /* BANNER */
     .banner {

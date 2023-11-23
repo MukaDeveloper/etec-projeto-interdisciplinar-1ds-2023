@@ -31,55 +31,46 @@
             <ul class="header_nav_ul">
                 <li class="header_nav_ul_li"><a href="index.html" class="header_nav_ul_li_a">HOME</a></li>
                 <li class="header_nav_ul_li"><a href="index.html#aboutUs" class="header_nav_ul_li_a">Sobre Nós</a></li>
+                <li class="header_nav_ul_li"><a href="calculadora.html" class="header_nav_ul_li_a"
+                        style="color:#735e89">Calculadora</a></li>
                 <li class="header_nav_ul_li"><a href="index.html#faleConosco" class="header_nav_ul_li_a">Fale
                         Conosco</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <h1> EQUAÇÃO DE SEGUNDO GRAU </h1>
-        <p>Fórmula : a(x^2)+b(x)+c = 0</p>
-        <p> Δ = (b^2)-4*a*c</p>
-        <p>bhaskara = -b±√Δ/(2*a)</p>
+    <section class="main">
+        <h1>EQUAÇÃO DE SEGUNDO GRAU
+        </h1>
+        <p>Fórmula : ax² + bx + c = 0</p>
+        <p> Δ = b² - 4 . a . c</p>
+        <p>Bhaskara = -b ± √Δ / 2 . a</p>
 
         <form>
+            <div class="form_div">
+                <input type="text" id="idtextA" class="form_div_input" placeholder="Valor de A. Exemplo: -5"> <br> <br>
+                <input type="text" id="idtextB" class="form_div_input" placeholder="Valor de B. Exemplo: 14"> <br> <br>
+                <input type="text" id="idtextC" class="form_div_input" placeholder="Valor de C. Exemplo: 8"> <br>
+            </div> <br>
 
-            <div>
-                <label>VALOR A: </label>
-                <input type="text" id="idtextA">
-            </div>
-
-
-            <div>
-                <label>VALOR B: </label>
-                <input type="text" id="idtextB">
-
-            </div>
-
-
-            <div>
-
-                <label>VALOR C: </label>
-                <input type="text" id="idtextC"> <br><br>
-
-            </div>
-
-            <div>
-
-                <button id="calcularBtn" onclick="calcular(event)">Calcular</button>
-                <button id="limparBtn" type="reset">Limpar</button>
-
-            </div>
+            <button id="calcularBtn" onclick="calcular(event)">CALCULAR</button>
+            <button id="limparBtn" type="reset">LIMPAR</button>
 
             <div id="resultados">
                 <h2>Resultados:</h2>
-                <p id="deltaRes"></p>
-                <p id="bhaskaraRes"></p>
+                <p id="deltaRes" class="result">&nbsp;</p>
+                <p id="bhaskaraRes" class="result">
+                    <spam id="x1"></spam> <br>
+                    <spam id="x2"></spam>
+                </p>
             </div>
+            <img src="img/MatrXyz.png" alt="MatrXyz" height="80">
         </form>
+    </section>
 
-    </main>
+    <footer>
+
+    </footer>
 
 </body>
 

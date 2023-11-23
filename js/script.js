@@ -15,9 +15,10 @@ function calcular(event) {
     if (delta < 0) {
         bhaskaraRes.textContent = "Não há valor real para essa equação."
     } else {
-        var x1 = (-b + Math.sqrt(delta)) / (2 * a);
-        var x2 = (-b - Math.sqrt(delta)) / (2 * a);
+        var x1res = (-b + Math.sqrt(delta)) / (2 * a);
+        var x2res = (-b - Math.sqrt(delta)) / (2 * a);
 
-        bhaskaraRes.textContent = `x1 = ${x1.toFixed(2)}  /  x2 = ${x2.toFixed(2)}`;
+        x1.textContent = `x1 = ${x1res.toFixed(2)}`;
+        x2.textContent = `x2 = ${x2res.toFixed(2)}`;
     }
 }

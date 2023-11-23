@@ -6,12 +6,15 @@ body {
     margin: 0;
 }
 
-main {
+.main {
     text-align: center;
     padding: 20px;
     margin: 50px auto;
-    border-radius: 10px;
     box-shadow: 0 0 10px rgb(255, 255, 255);
+    margin-left: 30%;
+    margin-right: 30%;
+    border: 1px solid black;
+    border-radius: 22px;
 }
 
 /* HEADER */
@@ -42,31 +45,33 @@ main {
     color: #866da0;
 }
 
+/* CORPO DA CALCULADORA */
+/* PARTE DO TEXTO */
 h1 {
-    color: white;
+    color: #735e89;
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-size: 32px;
 }
 
 p {
-    color: white;
+    color: black;
     line-height: 1.5;
+    font-size: 21px;
 }
 
-form {
-    margin-top: 20px;
+/* PARTE DO FORMULÁRIO */
+
+.form_div {
+    justify-content: space-around;
+    padding: 16px;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input {
-    width: 10%;
+.form_div_input {
+    border: 3px solid #866DA0;
     padding: 10px;
-    margin-bottom: 10px;
     box-sizing: border-box;
+    font-size: 24px;
 }
 
 button {
@@ -77,25 +82,14 @@ button {
     border-radius: 5px;
     cursor: pointer;
     margin-right: 10px;
+    font-size: 18px;
 }
 
 button:hover {
     background-color: #735e89;
 }
 
-
-div>button {
-    margin-top: 10px;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-}
-
-#deltaRes,
-#bhaskaraRes {
+.result {
     color: black;
+    border-bottom: 1px solid black;
 }
