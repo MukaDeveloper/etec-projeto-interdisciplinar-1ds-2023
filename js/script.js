@@ -1,5 +1,5 @@
 function calcular(event) {
-    event.preventDefault();
+    event?.preventDefault();
 
     var a = parseFloat(document.getElementById('idtextA').value);
     var b = parseFloat(document.getElementById('idtextB').value);
@@ -22,3 +22,20 @@ function calcular(event) {
         x2.textContent = `x2 = ${x2res.toFixed(2)}`;
     }
 }
+
+document.getElementById('limparBtn').addEventListener('click', function () {
+    x1.textContent = ` `;
+    x2.textContent = ` `;
+})
+
+document.getElementById('idtextA').addEventListener('keydown', function (event) {
+    if (event.key === "Enter") calcular();
+})
+
+document.getElementById('idtextB').addEventListener('keydown', function (event) {
+    if (event.key === "Enter") calcular();
+})
+
+document.getElementById('idtextC').addEventListener('keydown', function (event) {
+    if (event.key === "Enter") calcular();
+})
