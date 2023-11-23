@@ -121,12 +121,11 @@ html {
 
 /* SOBRE NÓS */
 #aboutUs {
-    margin: 10%;
+    margin: 5% 5% 5% 10%;
 }
 
 .aboutUsText {
     font-size: 21px;
-    margin: 10px 10% 10px 10%;
     max-width: 50%;
 }
 
@@ -147,9 +146,20 @@ html {
 /* CALCULADORA */
 #calculadora {
     background-image: url(../img/Background.png);
+}
+
+.calcContent {
+    margin: 5% 5% 5% 10%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-around;
+}
+
+#calcButtonID {
+    text-decoration: none;
+    color: white;
+    background-color: #866DA0;
+    padding: 16px;
 }
 
 .calcText {
@@ -165,7 +175,9 @@ html {
 
 /* RODAPÉ (FOOTER) */
 /* FALE CONOSCO */
-#faleConosco {}
+#faleConosco {
+    background-color: hsl(60, 100%, 86%);
+}
 
 .footerTop {
     display: flex;
