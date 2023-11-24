@@ -119,10 +119,11 @@
     <footer id="faleConosco">
         <div class="footerTop">
             <div class="footerLeft">
-                <p>Deseja receber novidades antes que qualquer um? <br> Inscreva-se em nossa Newsletter:</p>
+                <p>Deseja receber novidades antes que qualquer um? <br> Inscreva-se em nossa Newsletter:</p> <br>
                 <form action="" class="form_newsletter">
-                    <input type="email" placeholder="E-mail">
-                    <input type="submit" value="Quero me inscrever">
+                    <input type="email" placeholder="E-mail" id="form_newsletter_inputEmail">
+                    <spam class="hidden" id="form_newsletter_feedback" style="font-size: 9px;">Preencha o campo acima</spam>
+                    <input type="submit" value="Participar" id="form_newsletter_button" onclick="newsletter()">
                 </form>
                 <br>
 

@@ -13,13 +13,23 @@ function calcular(event) {
     deltaRes.textContent = `Δ = ${delta}`;
 
     if (delta < 0) {
-        bhaskaraRes.textContent = "Não há valor real para essa equação."
+        bhaskaraRes.textContent = "Não há valor real para essa equação.";
     } else {
         var x1res = (-b + Math.sqrt(delta)) / (2 * a);
         var x2res = (-b - Math.sqrt(delta)) / (2 * a);
 
         x1.textContent = `x1 = ${x1res.toFixed(2)}`;
         x2.textContent = `x2 = ${x2res.toFixed(2)}`;
+    }
+}
+
+function newsletter() {
+    const inputEmail = document.getElementById('form_newsletter_inputEmail').value;
+    var regex = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i;
+
+    if(inputEmail.value === null || !regex.test(inputEmail) || inputEmail.value === undefined) {
+        const feedback = document.getElementById('form_newsletter_feedback');
+        feedback.classList.remove("hidden");
     }
 }
 
