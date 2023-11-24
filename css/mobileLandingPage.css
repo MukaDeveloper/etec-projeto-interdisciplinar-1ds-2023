@@ -11,10 +11,21 @@
         scroll-behavior: smooth;
     }
 
+    .h2,
+    .h3,
+    .h4 {
+        font-family: 'Monomaniac One', sans-serif;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+
     /* HEADER */
     #header {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         font-family: 'Monomaniac One', sans-serif;
         padding: 17px;
@@ -38,6 +49,18 @@
     .header_nav_ul_li_a:hover {
         transition: 0.5s;
         color: #614d7b;
+    }
+
+    .header_nav_ul {
+        display: none;
+    }
+
+    .header_nav_divMenu {
+        display: inline;
+    }
+
+    .header_nav_icon {
+        display: inline;
     }
 
     /* BANNER */
@@ -127,15 +150,117 @@
         transition: 0.3s;
     }
 
-    .h2 {
-        font-family: 'Monomaniac One', sans-serif;
+
+    /* SOBRE NÓS */
+    #aboutUs {
+        margin: 5% 5% 5% 10%;
     }
 
-    .h3 {
-        font-family: 'Monomaniac One', sans-serif;
+    .aboutUsText {
+        font-size: 21px;
+        max-width: none;
     }
 
-    .h4 {
+    .ancora_etechas {
+        color: #645178;
+        text-decoration: none;
+    }
+
+    .ancora_etechas:hover {
+        text-decoration: underline;
+    }
+
+    .descricao {
+        font-size: 16px;
+    }
+
+
+    /* CALCULADORA */
+    #calculadora {
+        background-image: url(../img/Background.png);
+        position: relative;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .calcContent {
+        margin: 5% 5% 5% 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #calcButtonID {
+        text-decoration: none;
+        color: white;
+        background-color: #866DA0;
+        padding: 8px 48px 8px 48px;
         font-family: 'Monomaniac One', sans-serif;
+        font-size: 24px
+    }
+
+    .calcText {
+        max-width: 58%;
+        color: rgba(0, 0, 0, 0.86);
+        font-family: 'Montaga';
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .auto-layout-type-buttonTop {
+        display: none;
+    }
+
+
+    /* RODAPÉ (FOOTER) */
+    /* FALE CONOSCO */
+    #faleConosco {
+        background-color: hsl(60, 100%, 86%);
+    }
+
+    .footerTop {
+        display: flex;
+        justify-content: space-around;
+        padding: 16px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .footerLeft {
+        max-width: 45%;
+    }
+
+    .footer_p {
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    #form_newsletter_inputEmail {
+        display: flex;
+        padding: 4px;
+        border: 1px solid #866DA0;
+    }
+
+    #form_newsletter_button {
+        display: flex;
+        justify-content: left;
+        padding: 2px 16px 2px 16px;
+        background-color: #645178;
+        font-family: 'Monomaniac One', sans-serif;
+        border: 1px solid #645178;
+        color: white;
+        border-radius: 10px;
+        text-transform: uppercase;
+        font-size: 12px;
+        margin-top: 4px;
+        ;
+    }
+
+    .form_newsletter_button:hover {
+        cursor: pointer;
+        background-color: #866DA0;
     }
 }
