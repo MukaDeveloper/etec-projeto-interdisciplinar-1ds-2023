@@ -73,7 +73,7 @@
         box-shadow: 0px 29px 25px rgba(0, 0, 0, 0.3);
     }
 
-    .checkbox:checked~.header_nav_ul {
+    #checkbox:checked~.header_nav_ul {
         display: block;
     }
 

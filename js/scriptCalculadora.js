@@ -63,3 +63,21 @@ document.getElementById('idtextB').addEventListener('keydown', function (event) 
 document.getElementById('idtextC').addEventListener('keydown', function (event) {
     if (event.key === "Enter") calcular();
 })
+
+function handleResize() {
+    var larguraDaJanela = window.innerWidth;
+
+    if (larguraDaJanela < 400) {
+        const a = document.getElementById('idtextA');
+        const b = document.getElementById('idtextB');
+        const c = document.getElementById('idtextC');
+
+        a.placeholder = `A`;
+        b.placeholder = `B`;
+        c.placeholder = `C`;
+    }
+}
+
+window.addEventListener('resize', handleResize);
+
+handleResize();

@@ -3,8 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
+
+    <!-- CSS Para MOBILE -->
+    <link rel="stylesheet" href="css/mobileCalculadora.css">
+
+    <!-- CSS Para PC -->
     <link rel="stylesheet" type="text/css" href="css/pcCalculadora.css">
 
+    <!-- FONTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -23,17 +29,21 @@
 </head>
 
 <body>
+    <!-- CABEÇALHO -->
     <header id="header">
         <div class="logo">
             <a href="#"><img src="img/Logo.png" width="45"></a>
         </div>
         <nav class="header_nav">
+            <input type="checkbox" id="checkbox" class="checkbox">
+            <label for="checkbox" class="label-menu">
+                <span class="hamburger"></span>
+            </label>
             <ul class="header_nav_ul">
-                <li class="header_nav_ul_li"><a href="index.html" class="header_nav_ul_li_a">HOME</a></li>
-                <li class="header_nav_ul_li"><a href="index.html#aboutUs" class="header_nav_ul_li_a">Sobre Nós</a></li>
-                <li class="header_nav_ul_li"><a href="calculadora.html" class="header_nav_ul_li_a"
-                        style="color:#735e89">Calculadora</a></li>
-                <li class="header_nav_ul_li"><a href="index.html#faleConosco" class="header_nav_ul_li_a">Fale
+                <li class="header_nav_ul_li"><a href="#" class="header_nav_ul_li_a" style="color:#735e89">HOME</a></li>
+                <li class="header_nav_ul_li"><a href="#aboutUs" class="header_nav_ul_li_a">Sobre Nós</a></li>
+                <li class="header_nav_ul_li"><a href="calculadora.html" class="header_nav_ul_li_a">Calculadora</a></li>
+                <li class="header_nav_ul_li"><a href="#faleConosco" class="header_nav_ul_li_a">Fale
                         Conosco</a></li>
             </ul>
         </nav>
@@ -53,7 +63,7 @@
                 <input type="text" id="idtextC" class="form_div_input" placeholder="Valor de C. Exemplo: 8"> <br>
             </div> <br>
 
-            <button id="calcularBtn" onclick="calcular(event)">CALCULAR</button>
+            <button id="calcularBtn" onclick="calcular(event)">CALCULAR</button> <br> <br>
             <button id="limparBtn" type="reset">LIMPAR</button>
 
             <div id="resultados">

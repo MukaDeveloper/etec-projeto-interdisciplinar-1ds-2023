@@ -1,4 +1,4 @@
-@media screen and (min-width: 620px) {
+@media screen and (max-width: 620px) {
     body {
         background-size: cover;
         background-position: center;
@@ -8,50 +8,94 @@
         padding: 0px;
     }
 
-    /* HEADER */
-    #header {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+    .h2,
+    .h3,
+    .h4 {
         font-family: 'Monomaniac One', sans-serif;
     }
 
-    .header_nav_ul {
+    .hidden {
+        display: none;
+    }
+
+
+    /* HEADER */
+    #header {
         display: flex;
-        list-style-type: none;
-    }
-
-    .header_nav_ul_li {
-        font-size: 18px;
-    }
-
-    .header_nav_ul_li_a {
-        padding: 27px;
-        text-decoration: none;
-        color: black;
-    }
-
-    .header_nav_ul_li_a:hover {
-        transition: 0.5s;
-        color: #866da0;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Monomaniac One', sans-serif;
+        padding: 1rem;
     }
 
     .checkbox {
         display: none;
     }
 
+    .label-menu {
+        display: flex;
+        cursor: pointer;
+        gap: 0.5rem;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .hamburger {
+        border-top: 0.125rem solid black;
+        width: 1.25rem;
+    }
+
+    .hamburger::before,
+    .hamburger::after {
+        content: " ";
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background: black;
+        margin-top: 0.3125rem;
+    }
+
+    .header_nav_ul {
+        list-style: none;
+        gap: 0.5rem;
+        display: none;
+        justify-content: center;
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        background-color: white;
+        text-align: center;
+        width: 100%;
+        z-index: 6;
+        box-shadow: 0px 29px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    #checkbox:checked~.header_nav_ul {
+        display: block;
+    }
+
+    .header_nav_ul a {
+        color: black;
+        text-decoration: none;
+        display: block;
+        padding: 1rem;
+        margin-inline: 0.75rem;
+        font-size: 21px;
+    }
+
+    .header_nav_ul_li_a:hover {
+        transition: 0.5s;
+        color: #614d7b;
+    }
+
     /* CORPO DA CALCULADORA */
     .main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         text-align: center;
-        padding: 4%;
-        margin: 3.125rem 15%;
+        padding: 20px;
+        margin: 3.125rem 1rem;
         box-shadow: 0 0 10px rgb(255, 255, 255);
         border: 1px solid black;
         border-radius: 22px;
-        max-width: 600px;
     }
 
     /* PARTE DO TEXTO */
@@ -72,15 +116,15 @@
     /* PARTE DO FORMULÁRIO */
     .form_div {
         justify-content: space-around;
-        padding: 1rem;
+        padding: 16px;
     }
 
     .form_div_input {
         border: 3px solid #866DA0;
         padding: 10px;
         box-sizing: border-box;
-        font-size: 1.5rem;
-        width: 100%;
+        font-size: 24px;
+        max-width: 100%;
     }
 
     .form_div_input::placeholder {
@@ -95,7 +139,7 @@
         border-radius: 5px;
         cursor: pointer;
         margin-right: 10px;
-        font-size: 1.125rem;
+        font-size: 18px;
     }
 
     button:hover {
