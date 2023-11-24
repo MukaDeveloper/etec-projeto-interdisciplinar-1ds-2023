@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/calculadora.css">
+    <link rel="stylesheet" type="text/css" href="css/pcCalculadora.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -68,8 +68,26 @@
         </form>
     </section>
 
-    <footer>
+    <!-- Rodapé do site, onde estão as informações de contato e newsletter -->
+    <footer id="faleConosco">
+        <div class="footerTop">
+            <div class="footerLeft">
+                <p>Deseja receber novidades antes que qualquer um? <br> Inscreva-se em nossa Newsletter:</p> <br>
+                <form action="" class="form_newsletter">
+                    <input type="email" placeholder="E-mail" id="form_newsletter_inputEmail">
+                    <spam class="hidden" id="form_newsletter_feedback" style="font-size: 12px;">Preencha o campo acima
+                    </spam>
+                    <button id="form_newsletter_button" onclick="newsletter(event)">Inscrever</button>
+                </form>
+                <br>
+            </div>
+            <div class="footerRight">
+                <h3 class="h3">Contatos:</h3>
 
+            </div>
+        </div>
+
+        <p class="footer_p">©️ 2023. MatrXyz todos os direitos reservados</p>
     </footer>
 
 </body>

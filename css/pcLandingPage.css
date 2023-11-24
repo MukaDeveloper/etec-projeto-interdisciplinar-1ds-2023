@@ -28,7 +28,11 @@
         justify-content: space-around;
         align-items: center;
         font-family: 'Monomaniac One', sans-serif;
-        padding: 17px;
+        padding: 1rem;
+    }
+
+    .checkbox {
+        display: none;
     }
 
     .header_nav_ul {
@@ -41,7 +45,7 @@
     }
 
     .header_nav_ul_li_a {
-        padding: 27px;
+        padding: 1.6875rem;
         text-decoration: none;
         color: black;
     }
@@ -122,7 +126,7 @@
         background: #866DA0;
         border: 1px solid #866DA0;
         border-radius: 16px;
-        padding: 12px 48px 12px 48px;
+        padding: 0.75rem 3rem 0.75rem 3rem;
         font-size: 18px;
         font-weight: bold;
     }
@@ -178,7 +182,7 @@
         text-decoration: none;
         color: white;
         background-color: #866DA0;
-        padding: 8px 48px 8px 48px;
+        padding: 0.5rem 3rem 0.5rem 3rem;
         font-family: 'Monomaniac One', sans-serif;
         font-size: 24px
     }
@@ -207,7 +211,7 @@
     .footerTop {
         display: flex;
         justify-content: space-around;
-        padding: 16px;
+        padding: 1rem;
         margin-left: 5%;
         margin-right: 5%;
     }
@@ -215,19 +219,19 @@
     .footer_p {
         justify-content: center;
         text-align: center;
-        padding-bottom: 20px;
+        padding-bottom: 1.25rem;
     }
 
     #form_newsletter_inputEmail {
         display: flex;
-        padding: 4px;
+        padding: 0.25rem;
         border: 1px solid #866DA0;
     }
 
     #form_newsletter_button {
         display: flex;
         justify-content: left;
-        padding: 2px 16px 2px 16px;
+        padding: 0.125rem 1rem 0.125rem 1rem;
         background-color: #645178;
         font-family: 'Monomaniac One', sans-serif;
         border: 1px solid #645178;
