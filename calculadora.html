@@ -4,11 +4,8 @@
 <head>
     <meta charset="UTF-8">
 
-    <!-- CSS Para MOBILE -->
-    <link rel="stylesheet" href="css/mobileCalculadora.css">
-
-    <!-- CSS Para PC -->
-    <link rel="stylesheet" type="text/css" href="css/pcCalculadora.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/calculadora.css">
 
     <!-- FONTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,42 +37,73 @@
                 <span class="hamburger"></span>
             </label>
             <ul class="header_nav_ul">
-                <li class="header_nav_ul_li"><a href="#" class="header_nav_ul_li_a" style="color:#735e89">HOME</a></li>
-                <li class="header_nav_ul_li"><a href="#aboutUs" class="header_nav_ul_li_a">Sobre Nós</a></li>
-                <li class="header_nav_ul_li"><a href="calculadora.html" class="header_nav_ul_li_a">Calculadora</a></li>
-                <li class="header_nav_ul_li"><a href="#faleConosco" class="header_nav_ul_li_a">Fale
+                <li class="header_nav_ul_li"><a href="index.html" class="header_nav_ul_li_a">HOME</a></li>
+                <li class="header_nav_ul_li"><a href="index.html#aboutUs" class="header_nav_ul_li_a">Sobre Nós</a></li>
+                <li class="header_nav_ul_li"><a href="#" class="header_nav_ul_li_a"
+                        style="color:#735e89">Calculadora</a></li>
+                <li class="header_nav_ul_li"><a href="intex.html#faleConosco" class="header_nav_ul_li_a">Fale
                         Conosco</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="main">
-        <h1>EQUAÇÃO DE SEGUNDO GRAU
-        </h1>
-        <p>Fórmula : ax² + bx + c = 0</p>
-        <p> Δ = b² - 4 . a . c</p>
-        <p>Bhaskara = -b ± √Δ / 2 . a</p>
+        <div class="main_text autoLayout_top">
+            <h3 class="h3">Fórmula de Bhaskara</h3> <br>
+            <p>
+                A fórmula de Bhaskara é uma solução para encontrar as raízes de uma equação quadrática.
+                Bhaskara II, um matemático indiano do século XII, contribuiu significativamente para o
+                desenvolvimento da álgebra e criou essa fórmula.
+            </p> <br>
+            <p>
+                Essa fórmula é amplamente utilizada para resolver equações quadráticas em diversas áreas
+                da matemática e da física. Ela permite encontrar os valores de x que satisfazem a equação
+                quadrática, considerando os coeficientes a, b e c.
+            </p> <br>
+        </div>
+        <div class="main_left">
+            <h1>EQUAÇÃO DE SEGUNDO GRAU
+            </h1>
+            <p>Fórmula : ax² + bx + c = 0</p>
+            <p> Δ = b² - 4 . a . c</p>
+            <p>Bhaskara = -b ± √Δ / 2 . a</p>
 
-        <form>
-            <div class="form_div">
-                <input type="text" id="idtextA" class="form_div_input" placeholder="Valor de A. Exemplo: -5"> <br> <br>
-                <input type="text" id="idtextB" class="form_div_input" placeholder="Valor de B. Exemplo: 14"> <br> <br>
-                <input type="text" id="idtextC" class="form_div_input" placeholder="Valor de C. Exemplo: 8"> <br>
-            </div> <br>
+            <form>
+                <div class="form_div">
+                    <input type="text" id="idtextA" class="form_div_input" placeholder="Valor de A. Exemplo: -5"> <br>
+                    <br>
+                    <input type="text" id="idtextB" class="form_div_input" placeholder="Valor de B. Exemplo: 14"> <br>
+                    <br>
+                    <input type="text" id="idtextC" class="form_div_input" placeholder="Valor de C. Exemplo: 8"> <br>
+                </div> <br>
 
-            <button id="calcularBtn" onclick="calcular(event)">CALCULAR</button> <br> <br>
-            <button id="limparBtn" type="reset">LIMPAR</button>
+                <button id="calcularBtn" onclick="calcular(event)">CALCULAR</button> <br> <br>
+                <button id="limparBtn" onclick="limpar(event)">LIMPAR</button>
 
-            <div id="resultados">
-                <h2>Resultados:</h2>
-                <p id="deltaRes" class="result">&nbsp;</p>
-                <p id="bhaskaraRes" class="result">
-                    <spam id="x1"></spam> <br>
-                    <spam id="x2"></spam>
-                </p>
-            </div>
-            <img src="img/MatrXyz.png" alt="MatrXyz" height="80">
-        </form>
+                <div id="resultados">
+                    <h2>Resultados:</h2>
+                    <p id="deltaRes" class="result">&nbsp;</p>
+                    <p id="bhaskaraRes" class="result">
+                        <span id="x1"></span> <br>
+                        <span id="x2"></span>
+                    </p>
+                </div>
+                <img src="img/MatrXyz.png" alt="MatrXyz" height="80">
+            </form>
+        </div>
+        <div class="main_text autoLayout_bottom">
+            <h3 class="h3">Fórmula de Bhaskara</h3> <br>
+            <p>
+                A fórmula de Bhaskara é uma solução para encontrar as raízes de uma equação quadrática.
+                Bhaskara II, um matemático indiano do século XII, contribuiu significativamente para o
+                desenvolvimento da álgebra e criou essa fórmula.
+            </p> <br>
+            <p>
+                Essa fórmula é amplamente utilizada para resolver equações quadráticas em diversas áreas
+                da matemática e da física. Ela permite encontrar os valores de x que satisfazem a equação
+                quadrática, considerando os coeficientes a, b e c.
+            </p> <br>
+        </div>
     </section>
 
     <!-- Rodapé do site, onde estão as informações de contato e newsletter -->
@@ -85,15 +113,16 @@
                 <p>Deseja receber novidades antes que qualquer um? <br> Inscreva-se em nossa Newsletter:</p> <br>
                 <form action="" class="form_newsletter">
                     <input type="email" placeholder="E-mail" id="form_newsletter_inputEmail">
-                    <spam class="hidden" id="form_newsletter_feedback" style="font-size: 12px;">Preencha o campo acima
-                    </spam>
+                    <span class="hidden" id="form_newsletter_feedback" style="font-size: 12px;">Preencha o campo acima
+                    </span>
                     <button id="form_newsletter_button" onclick="newsletter(event)">Inscrever</button>
                 </form>
                 <br>
             </div>
             <div class="footerRight">
                 <h3 class="h3">Contatos:</h3>
-
+                <a href="#"><img src="img/whatsapp.png" alt="" width="36"></a> <br>
+                <a href="#"><img src="img/discord.png" alt="" width="40"></a>
             </div>
         </div>
 
