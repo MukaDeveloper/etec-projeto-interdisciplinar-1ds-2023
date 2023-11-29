@@ -6,7 +6,7 @@
 <br> <br>
     Projeto em grupo das matérias "PWEB1 (Programação Web 1); DD (Design Digital); PA (Programação e Algoritmo). <br>
     Integrantes do grupo: <br>
-    <a>Aisha</a>; <br>
+    <a href="https://github.com/Santosaisha">Aisha Chinchilla</a>; <br>
     <a href="https://github.com/biancacoders">Bianca Karoliny</a>; <br>
     <a>Emerson</a>; <br>
     <a href="https://github.com/MukaDeveloper/">Samuel Bertoni</a>;
