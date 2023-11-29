@@ -8,6 +8,6 @@
     Integrantes do grupo: <br>
     <a href="https://github.com/Santosaisha">Aisha Chinchilla</a>; <br>
     <a href="https://github.com/biancacoders">Bianca Karoliny</a>; <br>
-    <a>Emerson</a>; <br>
+    <a href="https://github.com/Arapuama">Emerson Carlos</a>; <br>
     <a href="https://github.com/MukaDeveloper/">Samuel Bertoni</a>;
 </p>
